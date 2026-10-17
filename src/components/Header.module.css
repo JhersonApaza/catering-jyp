@@ -1,0 +1,121 @@
+.headerWrapper {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 3px solid var(--primary-gold);
+  border-bottom: 2px solid var(--primary-gold);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.headerContainer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+}
+
+.logoIcon {
+  color: var(--primary-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--dark-slate);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.navLink {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--dark-slate);
+}
+
+.navLink.active {
+  color: var(--dark-slate);
+  font-weight: 600;
+}
+
+.navLink.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--primary-gold);
+  border-radius: 2px;
+}
+
+.loginBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--dark-slate);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(46, 58, 71, 0.2);
+}
+
+.loginBtn:hover {
+  background-color: var(--dark-slate-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(46, 58, 71, 0.25);
+}
+
+.loginBtn:active {
+  transform: translateY(0);
+}
+
+/* Mobile responsive navigation */
+.menuToggle {
+  display: none;
+  color: var(--dark-slate);
+  padding: 6px;
+}
+
+@media (max-width: 868px) {
+  .navLinks {
+    display: none;
+  }
+  
+  .menuToggle {
+    display: block;
+  }
+}

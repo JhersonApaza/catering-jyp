@@ -1,0 +1,181 @@
+.registerPageContainer {
+  max-width: 560px;
+  margin: 40px auto 80px auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.registerCard {
+  background-color: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  border-top: 4px solid var(--primary-gold);
+  padding: 38px 36px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.registerHeader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.registerTitle {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--dark-slate);
+}
+
+.registerSubtitle {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputLabel {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--dark-slate);
+}
+
+.inputFieldWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 14px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.textInput {
+  width: 100%;
+  padding: 11px 14px 11px 42px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  font-size: 13.5px;
+  font-family: inherit;
+  color: var(--text-primary);
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #ffffff;
+}
+
+.textInput:focus {
+  border-color: var(--primary-gold);
+  box-shadow: 0 0 0 3px var(--primary-gold-subtle);
+}
+
+.textInput::placeholder {
+  color: #9ca3af;
+}
+
+.termsRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary-gold);
+  cursor: pointer;
+}
+
+.submitBtn {
+  background-color: var(--dark-slate);
+  color: #ffffff;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+
+.submitBtn:hover {
+  background-color: var(--dark-slate-hover);
+  transform: translateY(-1px);
+}
+
+.dividerRow {
+  position: relative;
+  text-align: center;
+  margin: 6px 0;
+}
+
+.dividerRow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-light);
+}
+
+.dividerText {
+  position: relative;
+  background-color: #ffffff;
+  padding: 0 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.loginRedirectBtn {
+  background-color: #ffffff;
+  color: var(--dark-slate);
+  border: 1px solid var(--border-light);
+  padding: 11px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.loginRedirectBtn:hover {
+  background-color: var(--bg-input);
+  border-color: #cbd5e1;
+}
+
+@media (max-width: 580px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .registerCard {
+    padding: 28px 20px;
+  }
+}

@@ -1,0 +1,172 @@
+.loginPageContainer {
+  max-width: 460px;
+  margin: 48px auto 80px auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.loginCard {
+  background-color: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  border-top: 4px solid var(--primary-gold);
+  padding: 36px 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.loginHeader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.loginTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--dark-slate);
+}
+
+.loginSubtitle {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputLabel {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--dark-slate);
+}
+
+.inputFieldWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 14px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.textInput {
+  width: 100%;
+  padding: 11px 14px 11px 42px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-primary);
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #ffffff;
+}
+
+.textInput:focus {
+  border-color: var(--primary-gold);
+  box-shadow: 0 0 0 3px var(--primary-gold-subtle);
+}
+
+.textInput::placeholder {
+  color: var(--text-muted);
+}
+
+.optionsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.rememberMeLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.forgotPasswordLink {
+  color: var(--text-secondary);
+  transition: color 0.15s ease;
+}
+
+.forgotPasswordLink:hover {
+  color: var(--primary-gold);
+}
+
+.submitBtn {
+  background-color: var(--dark-slate);
+  color: #ffffff;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+
+.submitBtn:hover {
+  background-color: var(--dark-slate-hover);
+  transform: translateY(-1px);
+}
+
+.dividerRow {
+  position: relative;
+  text-align: center;
+  margin: 6px 0;
+}
+
+.dividerRow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-light);
+}
+
+.dividerText {
+  position: relative;
+  background-color: #ffffff;
+  padding: 0 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.createAccountBtn {
+  background-color: #ffffff;
+  color: var(--dark-slate);
+  border: 1px solid var(--border-light);
+  padding: 11px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.createAccountBtn:hover {
+  background-color: var(--bg-input);
+  border-color: #cbd5e1;
+}

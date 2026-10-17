@@ -1,0 +1,315 @@
+.helpContainer {
+  max-width: 1240px;
+  margin: 28px auto 60px auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* 1. Hero Banner */
+.heroCard {
+  position: relative;
+  background: linear-gradient(135deg, #2f3d4c 0%, #26323f 60%, #1e2732 100%);
+  border-radius: var(--radius-lg);
+  border-bottom: 5px solid var(--primary-gold);
+  padding: 48px 24px 58px 24px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(33, 44, 55, 0.12);
+}
+
+.heroTitle {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.heroSubtitle {
+  font-size: 15px;
+  color: #cbd5e1;
+}
+
+.searchPillWrapper {
+  max-width: 540px;
+  margin: -24px auto 0 auto;
+  position: relative;
+  z-index: 10;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 12px;
+}
+
+.searchPillInput {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-primary);
+  width: 100%;
+}
+
+.searchPillIcon {
+  color: var(--text-muted);
+}
+
+/* Section Title */
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark-slate);
+  margin-bottom: 4px;
+}
+
+.sectionSubtitle {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+/* 2. Cómo funciona - 5 step cards */
+.stepsHoriWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.stepHoriCard {
+  background-color: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  border-top: 3.5px solid var(--primary-gold);
+  padding: 16px 14px;
+  flex: 1;
+  min-width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: var(--shadow-sm);
+}
+
+.stepHoriNum {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--primary-gold);
+}
+
+.stepHoriTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dark-slate);
+}
+
+.stepHoriText {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.stepArrow {
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* 3. Cómo solicitar cotización - Vertical Steps */
+.verticalStepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.verticalStepItem {
+  background-color: #f1f4f8;
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.stepCircleNum {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--dark-slate);
+  flex-shrink: 0;
+}
+
+.stepIconBadge {
+  color: var(--dark-slate);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stepTextGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stepHeading {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--dark-slate);
+}
+
+.stepDesc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Success Card */
+.orderConfirmedCard {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.orderConfirmedLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.successCheckIcon {
+  color: #16a34a;
+  flex-shrink: 0;
+}
+
+.orderConfirmedTitle {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--dark-slate);
+}
+
+.orderConfirmedText {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.viewOrdersBtn {
+  background-color: var(--dark-slate);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.viewOrdersBtn:hover {
+  background-color: var(--dark-slate-hover);
+}
+
+/* 4. FAQs Accordion */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faqItem {
+  background-color: #f8fafc;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.faqQuestionBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--dark-slate);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.faqAnswer {
+  padding: 0 20px 16px 20px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* 5. Need More Help */
+.needHelpCard {
+  background-color: #ebf0f4;
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.needHelpTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--dark-slate);
+}
+
+.needHelpSubtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.contactOptionsRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.contactOptionBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: transparent;
+  padding: 8px 16px;
+}
+
+.contactOptionLabel {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--dark-slate);
+}
+
+.contactOptionVal {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
